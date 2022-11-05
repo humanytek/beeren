@@ -1,7 +1,5 @@
-#fer
-#fer
 {
-  "name": "Producto_Market",
+  "name": "Producto Market",
   "depends": [
     "product",
   ],
