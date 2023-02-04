@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="account_move_form_inherit" model="ir.ui.view">
-        <field name="name">account.move.form.inherit</field>
+    <record id="hide_payment_policy_in_customer_invoice" model="ir.ui.view">
+        <field name="name">hide.payment.policy.in.customer.invoice</field>
         <field name="model">account.move</field>
         <field name="inherit_id" ref="account.view_move_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='payment_policy']" position="attributes">
+            <xpath expr="//field[@name='invoice_payment_term_id']" position="attributes">
                 <attribute name="invisible">1</attribute>
             </xpath>
         </field>
