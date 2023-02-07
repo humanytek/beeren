@@ -4,6 +4,6 @@ class Producto(models.Model):
     _inherit = ['product.template']
 
     Asin = fields.Char(
-        related ="product_id.Asin",
-        string= "Asin",
+        related ='product_id.Asin',
+        string= 'Asin',
     )
