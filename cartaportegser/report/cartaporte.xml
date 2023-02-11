@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-  <record id="report_carta_porte" model="account.move" string="Carta Porte" 
+  <report id="report_carta_porte" model="account.move" string="Carta Porte" 
   name="cartaportegser.report_carta_porte" file="cartaportegser.report_session" report_type="qweb-pdf" />
   <template id="report_carta_porte">
     <t t-call="web.html_container">
