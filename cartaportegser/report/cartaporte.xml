@@ -10,6 +10,7 @@
                 <div class="page" style="max-width:100mm">
                   <div class="row texty-center">
                     <div class="col-12"><h6>INFORMACIÓN DE RUTA</h6></div>
+                    <span t-field="o.name"/><br/>
                   </div>
                 </div>
             </t>
