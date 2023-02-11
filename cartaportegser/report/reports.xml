@@ -19,7 +19,7 @@
 
         <record id="report_cartaporte_r" model="ir.actions.report">
             <field name="name">Carta Porte</field>
-            <field name="model">account.task</field>
+            <field name="model">account.move</field>
             <field name="report_type">qweb-pdf</field>
             <field name="report_name">cartaportegser.report_carta_porte</field>
             <field name="report_file">cartaportegser.report_carta_porte</field>
