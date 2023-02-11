@@ -10,6 +10,7 @@
     'data': [
         # reports
         'report/cartaporte.xml',
+        'report/reports.xml',
     ],
     'installable': True,
     'auto_install': False,

@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-  <report id="report_carta_porte" model="cartaportegser.session" string="Carta Porte" 
-  name="cartaportegser.report_carta_porte" file="cartaportegser.report_session" report_type="qweb-pdf" />
   <template id="report_carta_porte">
     <t t-call="web.html_container">
+      <t t-set="data_report_margin_top" t-value="12"/>
+      <t t-set="data_report_header_spacing" t-value="0"/>
+      <t t-set="data_report_dpi" t-value="110"/>
         <t t-foreach="docs" t-as="o">
             <t t-call="web.external_layout">
-                <div class="page">
-                 <div class="row">
-                    <div class="col-sm-12">
-                      <div class="row">
-                      </div>
-                    </div>
+                <div class="page" style="max-width:100mm">
+                  <div class="row texty-center">
+                    <div class="col-12"><h6>INFORMACIÓN DE RUTA</h6></div>
                   </div>
                 </div>
             </t>
@@ -19,6 +17,9 @@
     </t>
   </template>
 </odoo>
+
+
+
 
 
 
