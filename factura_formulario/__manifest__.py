@@ -5,7 +5,7 @@
     'summary': 'Module to hide Account field in Invoice Lines',
     'category': 'Accounting',
     'depends': [
-        'account','product'
+        'account','product','producto_market'
     ],
     'data': [
         'views/factura_beeren.xml',
