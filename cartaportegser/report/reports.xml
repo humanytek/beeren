@@ -23,11 +23,8 @@
             <field name="report_type">qweb-pdf</field>
             <field name="report_name">cartaportegser.report_carta_porte</field>
             <field name="report_file">cartaportegser.report_carta_porte</field>
-            <field name="binding_model_id" ref="account.model_account_invoice"></field>
             <field name="paperformat_id" ref="cartaportegser.paperformat_custom"></field>
-            <field name="binding_type">report</field>
         </record>
-        
 
     </data>
 </odoo>
