@@ -75,7 +75,7 @@
                     <div class="col-2 text-center"><span t-field="o.invoice_payment_term_id"/></div>
                     <div class="col-2 text-center"><span t-field="o.currency_id"/></div>
                     <div class="col-2 text-center"><span t-field="o.l10n_mx_edi_usage"/></div>
-                    <div class="col-2 text-center"><span t-field="o.l10n_mx_edi_payment_method_id"/></div>
+                    <div class="col-2 text-center"><span t-field="o.l10n_mx_edi_payment_method_id.code"/></div>
                     <div class="col-2 text-center"><span t-field="o.l10n_mx_edi_payment_policy"/></div>
                   </div>
                 </div>
