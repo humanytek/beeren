@@ -7,10 +7,16 @@
     <t t-call="web.html_container">
         <t t-foreach="docs" t-as="o">
             <t t-call="web.external_layout">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 border border-primary rounded p-5">
+                      Carta Porte
+                    </div>
+                  </div>
+                </div>
                 <div class="page" style="max-width:100mm">
                   <div class="row texty-center">
-                    <div class="col-12"><h6>INFORMACIÓN DE RUTA</h6></div>
-                    <span t-field="o.name"/><br/>
+                    <div class="col-12"><h6>Factura </h6> <span t-field="o.name"/><br/></div>
                   </div>
                 </div>
             </t>
