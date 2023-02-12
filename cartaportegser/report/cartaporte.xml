@@ -37,7 +37,7 @@
                     <div class="col-6 text-left p-3" style="font-size: 10px; color: BLACK;">
                       <h6>CLIENTE:</h6>
                       <span t-field="o.partner_id"/>
-                      <span t-field="o.street_name"/>
+                      <span t-field="o.res.partner.street_name"/>
                     </div>
                   </div>
                 </div>
