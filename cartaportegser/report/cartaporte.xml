@@ -9,14 +9,14 @@
             <t t-call="web.external_layout">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-12 border border-primary rounded p-5">
-                      Carta Porte
+                    <div class="col-12 border border-primary rounded p-5 text-center" style="background-color: #486f9e; color: white;">
+                      Contenido del reporte de Odoo
                     </div>
                   </div>
                 </div>
                 <div class="page" style="max-width:100mm">
                   <div class="row texty-center">
-                    <div class="col-12"><h6>Factura </h6> <span t-field="o.name"/><br/></div>
+                    <div class="col-12"><h6>Factura <span t-field="o.name"/></h6><br/></div>
                   </div>
                 </div>
             </t>
