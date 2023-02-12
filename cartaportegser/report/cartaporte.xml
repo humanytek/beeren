@@ -10,16 +10,30 @@
                 <div class="container-fluid">
                   <div class="row">
                     <div class="col-12 border border-primary rounded p-20 text-center" style="background-color: #486f9e; color: white;">
-                      <h4>Carta Porte</h4><br/>
+                      <h4>CARTA PORTE</h4>
                       <h5><span t-field="o.l10n_mx_edi_cfdi_uuid"/></h5>
                     </div>
                   </div>
                 </div>
                 <div class="page" style="max-width:100mm">
                   <div class="row texty-center">
+                    <br/>
                     <div class="col-12"><h3>Factura <span t-field="o.name"/></h3><br/></div>
                   </div>
                 </div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-6 text-left p-3" style="font-size: 16px; color: BLACK;">
+                      <h4>EMPRESA:</h4>
+                    </div>
+                    <div class="col-6 text-left p-3" style="font-size: 16px; color: BLACK;">
+                      <h4>CLIENTE:</h4>
+                    </div>
+                  </div>
+                </div>
+
+
+
             </t>
         </t>
     </t>
