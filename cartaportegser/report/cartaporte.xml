@@ -108,10 +108,10 @@
                     <div class="col-6 text-left p-3">
                       <hr style="border-top: 3px solid black;"/>    
                         <div class="row">
-                          <div class="col-5 text-right">
+                          <div class="col-3 text-right">
                             Subtotal
                           </div>
-                          <div class="col-1 text-end">
+                          <div class="col-3 text-end">
                             <span t-field="o.invoice_line_ids.price_subtotal"/>
                           </div>
                         </div> 
