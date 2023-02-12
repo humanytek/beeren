@@ -94,7 +94,7 @@
                     <div class="col-2 text-center"><span t-field="o.invoice_line_ids.product_id"/></div>
                     <div class="col-2 text-center"><span t-field="o.invoice_line_ids.name"/></div>
                     <div class="col-2 text-center"><span t-field="o.invoice_line_ids.quantity"/></div>
-                    <div class="col-2 text-center"><span t-field="o.invoice_line_ids.quantity"/></div>
+                    <div class="col-2 text-center"><span t-field="o.invoice_line_ids.price_unit"/></div>
                     <div class="col-2 text-center"><span t-field="o.invoice_line_ids.tax_ids"/> - <span t-field="o.l10n_mx_edi_payment_method_id"/></div>
                     <div class="col-2 text-center"><span t-field="o.invoice_line_ids.price_subtotal"/></div>
                   </div>
