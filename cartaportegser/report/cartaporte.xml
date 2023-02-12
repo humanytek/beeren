@@ -91,7 +91,7 @@
                     <div class="col-2 text-center font-weight-bold"><br/>Importe:</div>
                   </div>
                   <div class="row">
-                    <div class="col-2 text-center"><span t-field="o.invoice_date"/></div>
+                    <div class="col-2 text-center"><span t-field="o.product_id"/></div>
                     <div class="col-2 text-center"><span t-field="o.invoice_payment_term_id"/></div>
                     <div class="col-2 text-center"><span t-field="o.currency_id"/></div>
                     <div class="col-2 text-center"><span t-field="o.l10n_mx_edi_usage"/></div>
