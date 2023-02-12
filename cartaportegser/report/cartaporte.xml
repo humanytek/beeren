@@ -11,7 +11,7 @@
                   <div class="row">
                     <div class="col-12 border border-primary rounded p-20 text-center" style="background-color: #486f9e; color: white;">
                       <h4>Carta Porte</h4><br>
-                      <h5><span t-field="o.l10n_mx_edi_cfdi_uuid"/><h5>
+                      <h5><span t-field="o.l10n_mx_edi_cfdi_uuid"/></h5>
                     </div>
                   </div>
                 </div>
