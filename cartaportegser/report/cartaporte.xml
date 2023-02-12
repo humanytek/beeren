@@ -17,17 +17,26 @@
                 </div>
                 <div class="page" style="max-width:100mm">
                   <div class="row texty-center">
-                    <br/>
+                    <br/><br/>
                     <div class="col-12"><h3>Factura <span t-field="o.name"/></h3><br/></div>
                   </div>
                 </div>
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-6 text-left p-3" style="font-size: 16px; color: BLACK;">
+                    <div class="col-6 text-left p-3" style="font-size: 10px; color: BLACK;">
                       <h4>EMPRESA:</h4>
+                      <p>Transliquidos Serra S.A de C.V
+                      Carretera Camino al Puesto Km 6 No. S/N
+                      Lagos de Moreno Centro , LAGOS DE MORENO
+                      LAGOS DE MORENO, Jalisco, México
+                      CP: 47400
+                      RFC: TSE970313GW9
+                      Regimen Fiscal: Coordinados
+                      Expedido en: LAGOS DE MORENO, Jalisco, C.P.47400<p/>
                     </div>
-                    <div class="col-6 text-left p-3" style="font-size: 16px; color: BLACK;">
+                    <div class="col-6 text-left p-3" style="font-size: 10px; color: BLACK;">
                       <h4>CLIENTE:</h4>
+                      <span t-field="o.partner_id"/>
                     </div>
                   </div>
                 </div>
