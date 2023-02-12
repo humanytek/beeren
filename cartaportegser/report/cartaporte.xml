@@ -9,7 +9,7 @@
             <t t-call="web.external_layout">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-12 border border-primary rounded p-5 text-center" style="background-color: #486f9e; color: white;">
+                    <div class="col-12 border border-primary rounded p-20 text-center border-radius:22px;" style="background-color: #486f9e; color: white;">
                       <h4>CARTA PORTE</h4>
                       <h5><span t-field="o.l10n_mx_edi_cfdi_uuid"/></h5>
                     </div>
@@ -37,7 +37,7 @@
                       Regimen Fiscal: Coordinados<br/>
                       Expedido en: LAGOS DE MORENO, Jalisco, C.P.47400
                     </div>
-                    <div class="col-6 text-left p-3" style="font-size: 10px; color: BLACK;">
+                    <div class="col-6 text-left p-3" style="font-size: 10px; color: BLACK; border: 1px solid #000;">
                       <h6>CLIENTE:</h6>
                       <span t-field="o.partner_id"/><br/>
                       <span t-field="o.partner_id.street_name"/><br/>
