@@ -101,6 +101,24 @@
                     <hr class="my-4"/>
                 </div>
 
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-6 text-left p-3">
+                    </div>
+                    <div class="col-6 text-left p-3">
+                      <hr style="border-top: 3px solid black;">    
+                        <div class="row">
+                          <div class="col-3 text-right p-3">
+                            Subtotal
+                          </div>
+                          <div class="col-3 text-right p-3">
+                            <span t-field="o.invoice_line_ids.price_subtotal"/>
+                          </div>
+                        </div> 
+                    </div>
+                  </div>
+                </div>
+
             </t>
         </t>
     </t>
