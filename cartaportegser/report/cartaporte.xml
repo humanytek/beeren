@@ -80,6 +80,8 @@
                   </div>
                 </div>
 
+                <hr class="my-4">
+
 
                 <div class="container-fluid">
                   <div class="row">
@@ -99,6 +101,8 @@
                     <div class="col-2 text-center"><span t-field="o.l10n_mx_edi_payment_policy"/></div>
                   </div>
                 </div>
+
+                <hr class="my-4">
 
 
             </t>
