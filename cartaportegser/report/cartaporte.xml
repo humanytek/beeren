@@ -9,7 +9,7 @@
             <t t-call="web.external_layout">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-12 rounded p-20 text-center" style="background-color: #486f9e; color: white; border-radius:10px;">
+                    <div class="col-12 text-center" style="background-color: #486f9e; color: white; border-radius:10px;">
                       <h4>CARTA PORTE</h4>
                       <h5><span t-field="o.l10n_mx_edi_cfdi_uuid"/></h5>
                     </div>
