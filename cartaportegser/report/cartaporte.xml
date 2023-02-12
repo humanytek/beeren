@@ -30,20 +30,29 @@
                       <span t-field="o.company_id.city"/>, 
                       <span t-field="o.company_id.state_id"/>,
                       <span t-field="o.company_id.country_id"/><br/>
+                      CP:
                       <span t-field="o.company_id.zip"/>
+                      RFC:
+                      <span t-field="o.company_id.vat"/><br/>
                     </div>
                     <div class="col-6 text-left p-3" style="font-size: 10px; color: BLACK;">
                       <h6>CLIENTE:</h6>
                       <span t-field="o.partner_id"/><br/>
                       <span t-field="o.partner_id.street_name"/><br/>
+                      No.
                       <span t-field="o.partner_id.street_number"/><br/>
+                      Int.
                       <span t-field="o.partner_id.street_number2"/><br/>
+                      Colonia:
                       <span t-field="o.partner_id.l10n_mx_edi_colony"/><br/>
-                      <span t-field="o.partner_id.l10n_mx_edi_locality_id"/><br/>
-                      <span t-field="o.partner_id.city"/><br/>
-                      <span t-field="o.partner_id.city_id"/><br/>
-                      <span t-field="o.partner_id.country_id"/><br/>
-                      <span t-field="o.partner_id.state_id"/><br/>
+                      <span t-field="o.partner_id.l10n_mx_edi_locality_id"/>,
+                      <span t-field="o.partner_id.city"/>,
+                      <span t-field="o.partner_id.city_id"/>,
+                      <span t-field="o.partner_id.state_id"/>,<br/>
+                      <span t-field="o.partner_id.country_id"/>.<br/>
+                      CP:
+                      <span t-field="o.partner_id.zip"/><br/>
+                      RFC:
                       <span t-field="o.partner_id.vat"/><br/>
                       
                     </div>
