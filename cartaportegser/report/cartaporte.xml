@@ -78,7 +78,7 @@
                     <div class="col-2 text-center"><span t-field="o.l10n_mx_edi_payment_method_id.code"/> - <span t-field="o.l10n_mx_edi_payment_method_id"/></div>
                     <div class="col-2 text-center"><span t-field="o.l10n_mx_edi_payment_policy"/></div>
                   </div>
-                  <hr class="my-4">
+                    <hr class="my-4">
                 </div>
 
                 <div class="container-fluid">
@@ -98,7 +98,7 @@
                     <div class="col-2 text-center"><span t-field="o.l10n_mx_edi_payment_method_id.code"/> - <span t-field="o.l10n_mx_edi_payment_method_id"/></div>
                     <div class="col-2 text-center"><span t-field="o.l10n_mx_edi_payment_policy"/></div>
                   </div>
-                  <hr class="my-4">
+                    <hr class="my-4">
                 </div>
 
             </t>
