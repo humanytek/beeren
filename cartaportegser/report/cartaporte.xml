@@ -105,10 +105,10 @@
                   <div class="row">
                     <div class="col-7 text-left p-3">
                     </div>
-                    <div class="col-3 text-left p-3 border-top-3">
+                    <div class="col-3 text-left p-3 border-top-0">
                       Subtotal
                     </div>
-                    <div class="col-2 text-left p-3 border-top-3">
+                    <div class="col-2 text-left p-3 border-top-0">
                       <span t-field="o.invoice_line_ids.price_subtotal"/>
                     </div>
                   </div>
