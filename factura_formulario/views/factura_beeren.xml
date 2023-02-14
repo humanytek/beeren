@@ -8,8 +8,8 @@
             <field name="account_id" position="replace">
                 <field name="account_id" invisible="1"/>
             </field>
-            <field name="l10n_mx_edi_customs_number" position="replace">
-                <field name="l10n_mx_edi_customs_number" invisible="1"/>
+            <field name="tax_ids" position="replace">
+                <field name="tax_ids" invisible="1"/>
             </field>
             <field name="product_id" position="after">
                 <field name="Asin"/>
