@@ -9,6 +9,7 @@
     ],
     'data': [
         'views/factura_beeren.xml',
+        'report/facturabeeren.xml',
     ],
     'installable': True,
     'auto_install': False,
