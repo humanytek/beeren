@@ -114,7 +114,7 @@
                       Subtotal
                     </div>
                     <div class="col-2 text-left p-3" style="border-top: 2px solid black;">
-                      <span t-field="o.invoice_line_ids.price_subtotal"/>
+                      0
                     </div>
                   </div>
                   <div class="row">
@@ -124,7 +124,7 @@
                       IVA 16%
                     </div>
                     <div class="col-2 text-left p-3" style="border-top: 2px solid black;">
-                      <span t-field="o.invoice_line_ids.price_subtotal"/>
+                      0
                     </div>
                   </div>
                   <div class="row">
@@ -134,7 +134,7 @@
                       IVA Retencion 4%
                     </div>
                     <div class="col-2 text-left p-3" style="border-top: 2px solid black;">
-                      <span t-field="o.invoice_line_ids.price_subtotal"/>
+                      0
                     </div>
                   </div>
                   <div class="row">
@@ -144,7 +144,7 @@
                       TOTAL
                     </div>
                     <div class="col-2 text-left p-3" style="border-top: 2px solid black;">
-                      <span t-field="o.invoice_line_ids.price_subtotal"/>
+                      0
                     </div>
                   </div>             
                 </div>
@@ -155,7 +155,7 @@
                       Importe adeudado
                     </div>
                     <div class="col-2 text-left p-3" style="border-top: 2px solid black;">
-                      <span t-field="o.invoice_line_ids.price_subtotal"/>
+                      0
                     </div>
                   </div>
             </t>
