@@ -87,8 +87,8 @@
                             <th name="th_description" class="text-left"><span>Importe:</span></th>
                           </tr>
                         </thead>
-                        <tbody class="invoice_tbody">
-                          <t t-foreach="o.invoice_line_ids" t-as="productos" >   
+                        <t t-foreach="o.invoice_line_ids" t-as="productos" >   
+                          <tbody class="invoice_tbody">
                             <td class="text-left"><span t-esc="productos.product_id.unspsc_code_id.code"/></td>
                             <td class="text-left"><span t-field="productos.Asin"/></td>
                             <td class="text-left"><span t-field="productos.name"/></td>
@@ -96,8 +96,8 @@
                             <td class="text-left"><span t-field="productos.price_unit"/></td>
                             <td class="text-left"><span t-field="productos.tax_ids"/></td>
                             <td class="text-left"><span t-field="productos.price_subtotal"/></td>
-                          </t>
-                        </tbody>
+                          </tbody>
+                        </t>
                       </table>
 
                     <hr class="my-4"/>
