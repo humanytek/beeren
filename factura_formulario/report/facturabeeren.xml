@@ -15,7 +15,7 @@
                 </div>
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-6 text-left p-3" style="font-size: 10px; color: BLACK; border: 1px solid #000;">
+                    <div class="col-6 text-left p-3" style="font-size: 10px; color: BLACK; border: 0px solid #000;">
                       <h6>EMPRESA:</h6>
                       <span t-field="o.company_id.name"/><br/>
                       <span t-field="o.company_id.street"/><br/>
@@ -75,15 +75,17 @@
 
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-2 text-center font-weight-bold"><br/>Código Producto:</div>
+                    <div class="col-2 text-center font-weight-bold"><br/>Código<br/>Producto:</div>
+                    <div class="col-2 text-center font-weight-bold"><br/>Asin:</div>
                     <div class="col-2 text-center font-weight-bold"><br/>Descripción:</div>
                     <div class="col-2 text-center font-weight-bold"><br/>Cantidad:</div>
-                    <div class="col-2 text-center font-weight-bold"><br/>Precio Unitario:</div>
-                    <div class="col-2 text-center font-weight-bold"><br/>Código Unidad Impuestos:</div>
+                    <div class="col-2 text-center font-weight-bold"><br/>Precio<br/>Unitario:</div>
+                    <div class="col-2 text-center font-weight-bold"><br/>Impuestos:</div>
                     <div class="col-2 text-center font-weight-bold"><br/>Importe:</div>
                   </div>
                   <div class="row">
-                    <div class="col-2 text-center"><span t-field="o.invoice_line_ids.product_id"/></div>
+                    <div class="col-2 text-center"><span t-esc="o.invoice_line_ids.product_id.unspsc_code_id.code"/></div>
+                    <div class="col-2 text-center"><span t-field="o.invoice_line_ids.Asin"/></div>
                     <div class="col-2 text-center"><span t-field="o.invoice_line_ids.name"/></div>
                     <div class="col-2 text-center"><span t-field="o.invoice_line_ids.quantity"/></div>
                     <div class="col-2 text-center"><span t-field="o.invoice_line_ids.price_unit"/></div>
