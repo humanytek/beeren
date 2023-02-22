@@ -75,15 +75,20 @@
 
                 <div class="container-fluid"> 
                   <div class="row" style="font-size: 9px;">
-                    <tr>
-                      <th class="text-left" style="width:100px;">Código<br/>Producto:</th>
-                      <th class="text-left" style="width:100px;">Asin:</th>
-                      <th class="text-left" style="width:100px;">Descripción:</th>
-                      <th class="text-left" style="width:100px;">Cantidad:</th>
-                      <th class="text-left" style="width:100px;">Precio<br/>Unitario:</th>
-                      <th class="text-left" style="width:100px;">Impuestos:</th>
-                      <th class="text-left" style="width:100px;">Importe:</th>
-                    </tr>
+                      <table class="table table-sm o_main_table" name="invoice_line_table">
+                        <thead>
+                          <tr>
+                            <th name="th_description" class="text-left"><span>Código<br/>Producto:</span></th>
+                            <th name="th_description" class="text-left"><span>Asin:</span></th>
+                            <th name="th_description" class="text-left"><span>Descripción:</span></th>
+                            <th name="th_description" class="text-left"><span>Cantidad:</span></th>
+                            <th name="th_description" class="text-left"><span>Precio<br/>Unitario:</span></th>
+                            <th name="th_description" class="text-left"><span>Impuestos:</span></th>
+                            <th name="th_description" class="text-left"><span>Importe:</span></th>
+                          </tr>
+                        </thead>
+                      </table>
+
 
                     <!--<div class="col-1 text-center font-weight-bold">Código<br/>Producto:</div>
                     <div class="col-1 text-center font-weight-bold">Asin:</div>
