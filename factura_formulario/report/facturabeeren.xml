@@ -74,18 +74,18 @@
                 </div>
 
                 <div class="container-fluid"> 
-                  <div class="row" style="font-size: 10px;">
-                    <div class="col-1 text-center font-weight-bold"><br/>Código<br/>Producto:</div>
-                    <div class="col-1 text-center font-weight-bold"><br/>Asin:</div>
-                    <div class="col-3 text-center font-weight-bold"><br/>Descripción:</div>
-                    <div class="col-1 text-center font-weight-bold"><br/>Cantidad:</div>
-                    <div class="col-2 text-center font-weight-bold"><br/>Precio<br/>Unitario:</div>
-                    <div class="col-2 text-center font-weight-bold"><br/>Impuestos:</div>
-                    <div class="col-2 text-center font-weight-bold"><br/>Importe:</div>
+                  <div class="row" style="font-size: 9px;">
+                    <div class="col-1 text-center font-weight-bold">Código<br/>Producto:</div>
+                    <div class="col-1 text-center font-weight-bold">Asin:</div>
+                    <div class="col-3 text-center font-weight-bold">Descripción:</div>
+                    <div class="col-1 text-center font-weight-bold">Cantidad:</div>
+                    <div class="col-2 text-center font-weight-bold">Precio<br/>Unitario:</div>
+                    <div class="col-2 text-center font-weight-bold">Impuestos:</div>
+                    <div class="col-2 text-center font-weight-bold">Importe:</div>
                     <hr class="my-4"/>
                   </div>
                   <t t-foreach="o.invoice_line_ids" t-as="productos" >   
-                    <div class="row" style="font-size: 12px;">
+                    <div class="row" style="font-size: 11px;">
                       <div class="col-1 text-center"><span t-esc="productos.product_id.unspsc_code_id.code"/></div>
                       <div class="col-1 text-center"><span t-field="productos.Asin"/></div>
                       <div class="col-3 text-center"><span t-field="productos.name"/></div>
