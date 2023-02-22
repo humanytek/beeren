@@ -76,14 +76,14 @@
                 <div class="container-fluid"> 
                   <div class="row" style="font-size: 9px;">
                     <tr>
-                      <td class="text-left" style="width:100px;">Código<br/>Producto:</td>
-                      <td class="text-left" style="width:100px;">Asin:</td>
-                      <td class="text-left" style="width:100px;">Descripción:</td>
-                      <td class="text-left" style="width:100px;">Cantidad:</td>
-                      <td class="text-left" style="width:100px;">Precio<br/>Unitario:</td>
-                      <td class="text-left" style="width:100px;">Impuestos:</td>
-                      <td class="text-left" style="width:100px;">Importe:</td>
-                    </tr>
+                        <th class="text-left" style="width:100px;">Código<br/>Producto:</th>
+                        <th class="text-left" style="width:100px;">Asin:</th>
+                        <th class="text-left" style="width:100px;">Descripción:</th>
+                        <th class="text-left" style="width:100px;">Cantidad:</th>
+                        <th class="text-left" style="width:100px;">Precio<br/>Unitario:</th>
+                        <th class="text-left" style="width:100px;">Impuestos:</th>
+                        <th class="text-left" style="width:100px;">Importe:</th>
+                      </tr>
 
                     <!--<div class="col-1 text-center font-weight-bold">Código<br/>Producto:</div>
                     <div class="col-1 text-center font-weight-bold">Asin:</div>
