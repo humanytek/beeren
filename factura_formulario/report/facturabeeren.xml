@@ -29,7 +29,7 @@
                       Regimen Fiscal: Coordinados<br/>
                       Expedido en: LAGOS DE MORENO, Jalisco, C.P.47400
                     </div>
-                    <div class="col-6 text-left p-3" style="font-size: 10px; color: BLACK; border: 1px solid #000;">
+                    <div class="col-6 text-left p-3" style="font-size: 10px; color: BLACK; border: 0px solid #000;">
                       <h6>CLIENTE:</h6>
                       <span t-field="o.partner_id"/><br/>
                       <span t-field="o.partner_id.street_name"/><br/>
@@ -75,8 +75,8 @@
 
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-2 text-center font-weight-bold"><br/>Código<br/>Producto:</div>
-                    <div class="col-2 text-center font-weight-bold"><br/>Asin:</div>
+                    <div class="col-1 text-center font-weight-bold"><br/>Código<br/>Producto:</div>
+                    <div class="col-1 text-center font-weight-bold"><br/>Asin:</div>
                     <div class="col-2 text-center font-weight-bold"><br/>Descripción:</div>
                     <div class="col-2 text-center font-weight-bold"><br/>Cantidad:</div>
                     <div class="col-2 text-center font-weight-bold"><br/>Precio<br/>Unitario:</div>
@@ -84,8 +84,8 @@
                     <div class="col-2 text-center font-weight-bold"><br/>Importe:</div>
                   </div>
                   <div class="row">
-                    <div class="col-2 text-center"><span t-esc="o.invoice_line_ids.product_id.unspsc_code_id.code"/></div>
-                    <div class="col-2 text-center"><span t-field="o.invoice_line_ids.Asin"/></div>
+                    <div class="col-1 text-center"><span t-esc="o.invoice_line_ids.product_id.unspsc_code_id.code"/></div>
+                    <div class="col-1 text-center"><span t-field="o.invoice_line_ids.Asin"/></div>
                     <div class="col-2 text-center"><span t-field="o.invoice_line_ids.name"/></div>
                     <div class="col-2 text-center"><span t-field="o.invoice_line_ids.quantity"/></div>
                     <div class="col-2 text-center"><span t-field="o.invoice_line_ids.price_unit"/></div>
