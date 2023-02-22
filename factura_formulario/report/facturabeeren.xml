@@ -76,13 +76,13 @@
                 <div class="container-fluid"> 
                   <div class="row" style="font-size: 9px;">
                     <tr>
-                      <td class="text-left" style="width:100px;">Código<br/>Producto:</th>
-                      <td class="text-left" style="width:100px;">Asin:</th>
-                      <td class="text-left" style="width:100px;">Descripción:</th>
-                      <td class="text-left" style="width:100px;">Cantidad:</th>
-                      <td class="text-left" style="width:100px;">Precio<br/>Unitario:</th>
-                      <td class="text-left" style="width:100px;">Impuestos:</th>
-                      <td class="text-left" style="width:100px;">Importe:</th>
+                      <td class="text-left" style="width:100px;">Código<br/>Producto:</td>
+                      <td class="text-left" style="width:100px;">Asin:</td>
+                      <td class="text-left" style="width:100px;">Descripción:</td>
+                      <td class="text-left" style="width:100px;">Cantidad:</td>
+                      <td class="text-left" style="width:100px;">Precio<br/>Unitario:</td>
+                      <td class="text-left" style="width:100px;">Impuestos:</td>
+                      <td class="text-left" style="width:100px;">Importe:</td>
                     </tr>
 
                     <!--<div class="col-1 text-center font-weight-bold">Código<br/>Producto:</div>
@@ -98,12 +98,12 @@
                     <div class="row" style="font-size: 11px;">
                       <tr>
                         <td class="text-left" style="width:100px;"><span t-esc="productos.product_id.unspsc_code_id.code"/></th>
-                        <td class="text-left" style="width:100px;"><span t-field="productos.Asin"/></th>
-                        <td class="text-left" style="width:100px;"><span t-field="productos.name"/></th>
-                        <td class="text-left" style="width:100px;"><span t-field="productos.quantity"/></th>
-                        <td class="text-left" style="width:100px;"><span t-field="productos.price_unit"/></th>
-                        <td class="text-left" style="width:100px;"><span t-field="productos.tax_ids"/></th>
-                        <td class="text-left" style="width:100px;"><span t-field="productos.price_subtotal"/></th>
+                        <td class="text-left" style="width:100px;"><span t-field="productos.Asin"/></td>
+                        <td class="text-left" style="width:100px;"><span t-field="productos.name"/></td>
+                        <td class="text-left" style="width:100px;"><span t-field="productos.quantity"/></td>
+                        <td class="text-left" style="width:100px;"><span t-field="productos.price_unit"/></td>
+                        <td class="text-left" style="width:100px;"><span t-field="productos.tax_ids"/></td>
+                        <td class="text-left" style="width:100px;"><span t-field="productos.price_subtotal"/></td>
                       </tr>
 
                       <!--<div class="col-1 text-center"><span t-esc="o.invoice_line_ids.product_id.unspsc_code_id.code"/></div>
