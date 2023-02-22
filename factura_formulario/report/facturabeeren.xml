@@ -6,10 +6,10 @@
   <template id="report_factura_beeren">
     <t t-call="web.html_container">
         <t t-foreach="docs" t-as="o">
-            <t t-call="web.external_layout">
+            <t t-call="web.external_layout_clean">
                 <div class="page" style="max-width:100mm">
                   <div class="row texty-center">
-                    
+                    <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" alt="Logo"/>
                     <div class="col-12"><h3><br/>Factura <span t-field="o.name"/></h3></div>
                   </div>
                 </div>
@@ -74,7 +74,7 @@
                 </div>
 
                 <div class="container-fluid">
-                  <div class="row">
+                  <div class="row" style="font-size: 12px;">
                     <div class="col-1 text-center font-weight-bold"><br/>Código<br/>Producto:</div>
                     <div class="col-1 text-center font-weight-bold"><br/>Asin:</div>
                     <div class="col-2 text-center font-weight-bold"><br/>Descripción:</div>
@@ -82,6 +82,7 @@
                     <div class="col-2 text-center font-weight-bold"><br/>Precio<br/>Unitario:</div>
                     <div class="col-2 text-center font-weight-bold"><br/>Impuestos:</div>
                     <div class="col-2 text-center font-weight-bold"><br/>Importe:</div>
+                    <hr class="my-4"/>
                   </div>
                   <div class="row">
                     <div class="col-1 text-center"><span t-esc="o.invoice_line_ids.product_id.unspsc_code_id.code"/></div>
