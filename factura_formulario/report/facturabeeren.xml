@@ -54,7 +54,7 @@
                     </div>
                   </div>
                 </div>
-            
+                <!--
                 <div class="container-fluid">
                   <div class="row">
                     <div class="col-2 text-center font-weight-bold"><br/>Fecha de Factura:</div>
@@ -74,9 +74,39 @@
                   </div>
                     <hr class="my-4"/>
                 </div>
+                -->
+
 
                 <div class="container-fluid"> 
-                  <div class="row" style="font-size: 14px;">
+                  <div class="row" style="font-size: 12px;">
+                      <table class="table table-sm o_main_table" name="invoice_line_table">
+                        <thead>
+                          <tr>
+                            <th name="th_description" class="text-left"><span>Fecha de Factura:</span></th>
+                            <th name="th_description" class="text-left"><span>Fecha de Vencimiento:</span></th>
+                            <th name="th_description" class="text-left"><span>Moneda:</span></th>
+                            <th name="th_description" class="text-left"><span>Uso CDFI:</span></th>
+                            <th name="th_description" class="text-left"><span>Forma de Pago:</span></th>
+                            <th name="th_description" class="text-left"><span>Método de Pago:</span></th>
+                          </tr>
+                        </thead> 
+                        <tbody class="invoice_tbody">
+                          <td class="text-left"><span t-esc="o.invoice_date"/></td>
+                          <td class="text-left"><span t-field="o.invoice_payment_term_id"/></td>
+                          <td class="text-left"><span t-field="o.currency_id"/></td>
+                          <td class="text-left"><span t-field="o.l10n_mx_edi_usage"/></td>
+                          <td class="text-left"><span t-field="o.l10n_mx_edi_payment_method_id.code"/> - <span t-field="o.l10n_mx_edi_payment_method_id"/></td>
+                          <td class="text-left"><span t-field="o.l10n_mx_edi_payment_policy"/></td>
+                        </tbody>
+                      </table>
+
+                    <hr class="my-4"/>
+                  </div>
+                </div>
+
+
+                <div class="container-fluid"> 
+                  <div class="row" style="font-size: 12px;">
                       <table class="table table-sm o_main_table" name="invoice_line_table">
                         <thead>
                           <tr>
