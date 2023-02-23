@@ -138,7 +138,7 @@
 
 
                 <div class="clearfix">
-                    <div id="total" class="row">
+                    <div id="total" class="row" style="font-size: 12px;">
                         <div t-attf-class="#{'col-6' if report_type != 'html' else 'col-sm-7 col-md-6'} ml-auto">
                             <table class="table table-sm" style="page-break-inside: avoid;">
 
@@ -176,7 +176,7 @@
                 </div>
 
                 <div class="container-fluid">
-                  <div class="row">
+                  <div class="row" style="font-size: 12px;">
                     <div class="col-12 text-left">
                       <br/>
                       Por favor utilice la siguiente referencia al realizar su pago: <span t-field="o.name"/>  
