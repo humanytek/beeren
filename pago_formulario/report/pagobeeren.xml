@@ -19,38 +19,32 @@
                   </div>
                 </div>
 
-                <div class="page" style="max-width:100mm">
-                  <div class="row texty-center">
-                    <div class="col-12"><h3><br/>Pago <span t-field="o.name"/></h3></div>
-                  </div>
-                </div>
-
               <t t-call="web.external_layout">
                   <t t-set="o" t-value="o.with_context(lang=lang)"/>
                   <div class="page">
-                      <h3><strong>Payment Receipt: <span t-field="o.name"/></strong></h3>
+                      <h3><strong>Pago: <span t-field="o.name"/></strong></h3>
                       <div class="mb-4 mt-3">
                           <div class="row">
                               <div class="col-6" t-if="o.date">
-                                  Payment Date: <span t-field="o.date"/>
+                                  Fecha de Pago: <span t-field="o.date"/>
                               </div>
                           </div>
                           <div class="row">
                               <div class="col-6" t-if="o.partner_type">
                                   <t t-if="o.partner_type == 'customer'">
-                                      Customer:
+                                      Cliente:
                                   </t>
                                   <t t-if="o.partner_type == 'supplier'">
-                                      Vendor:
+                                      Empresa:
                                   </t><span t-field="o.partner_id"/>
                               </div>
                               <div class="col-6" t-if="o.payment_method_id">
-                                  Payment Method: <span t-field="o.payment_method_id.name"/>
+                                  Metodo de Pago: <span t-field="o.payment_method_id.name"/>
                               </div>
                           </div>
                           <div class="row">
                               <div class="col-6" t-if="o.amount">
-                                  Payment Amount: <span t-field="o.amount" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
+                                  Monto de Pago: <span t-field="o.amount" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
                               </div>
                               <div class="col-6" t-if="o.ref">
                                   Memo: <span t-field="o.ref"/>
