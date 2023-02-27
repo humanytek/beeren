@@ -34,28 +34,28 @@
 										<h3><strong>Payment Receipt: <span t-field="o.name"/></strong></h3>
 										<div class="row mt64">
 												<div class="col-6" t-if="o.date">
-														<strong>Payment Date: </strong> <span t-field="o.date"/>
+														<strong>Fecha de Pago: </strong> <span t-field="o.date"/>
 												</div>
 										</div>
 										<div class="row">
 												<div class="col-6">
 														<t t-if="o.amount &gt; 0">
-																<strong>Payment From: </strong>
+																<strong>Cliente: </strong>
 														</t>
 														<t t-else="">
-																<strong>Payment To: </strong>
+																<strong>Pagado a: </strong>
 														</t>
 														<span t-field="o.partner_id"/>
 												</div>
 												<div class="col-xs-6" t-if="o.l10n_mx_edi_payment_method_id">
 														<t t-if="not o.l10n_mx_edi_cfdi_uuid">
-																<strong>Payment Method: </strong><span t-field="o.l10n_mx_edi_payment_method_id.name"/>
+																<strong>Metodo de Pago: </strong><span t-field="o.l10n_mx_edi_payment_method_id.name"/>
 														</t>
 												</div>
 										</div>
 										<div class="row mb64">
 												<div class="col-6" t-if="o.amount">
-														<strong>Payment Amount: </strong><span t-field="o.amount" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
+														<strong>Monto de Pago: </strong><span t-field="o.amount" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
 												</div>
 												<div class="col-6" t-if="o.ref">
 														<strong>Memo: </strong><span t-field="o.ref"/>
@@ -95,13 +95,13 @@
 												<table class="table table-sm">
 														<thead>
 																<tr>
-																		<th>Invoice</th>
+																		<th>Factura</th>
 																		<th>UUID</th>
-																		<th class="text-right">Partiality</th>
-																		<th class="text-right">Previous balance</th>
-																		<th class="text-right">Amount Paid</th>
-																		<th class="text-right">Balance</th>
-																		<th>Currency</th>
+																		<th class="text-right">Parcialiad</th>
+																		<th class="text-right">Saldo Anterior</th>
+																		<th class="text-right">Monto Pagado</th>
+																		<th class="text-right">Saldo</th>
+																		<th>Moneda</th>
 																</tr>
 														</thead>
 														<tbody>
@@ -124,7 +124,7 @@
 														</tbody>
 												</table>
 										</t>
-										<t t-if="o.move_id.l10n_mx_edi_cfdi_uuid">
+										<!--<t t-if="o.move_id.l10n_mx_edi_cfdi_uuid">
 												<table class="table table-sm">
 														<thead>
 																<tr>
@@ -145,7 +145,7 @@
 																</tr>
 														</tbody>
 												</table>
-										</t>
+										</t>-->
 										<t t-if="is_cfdi_signed">
 												<div class="row" id="complement">
 														<div t-if="cfdi_vals.get('sello')" class="barcode col-3">
