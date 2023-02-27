@@ -36,6 +36,10 @@
 												<div class="col-6" t-if="o.date">
 														<strong>Fecha de Pago: </strong> <span t-field="o.date"/>
 												</div>
+												<div class="col-6">
+														<strong>Forma de Pago CFDI:</strong>
+														<span t-esc="'%s - %s' % (o.l10n_mx_edi_payment_method_id.code, o.l10n_mx_edi_payment_method_id.name)"/>
+												</div>
 										</div>
 										<div class="row">
 												<div class="col-6">
