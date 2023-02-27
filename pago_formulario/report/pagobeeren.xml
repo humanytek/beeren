@@ -31,7 +31,7 @@
 										</button>
 								</t>
 								<div class="page">
-										<h3><strong>Payment Receipt: <span t-field="o.name"/></strong></h3>
+										<h3><strong>Recibo de Pago: <span t-field="o.name"/></strong></h3>
 										<div class="row mt64">
 												<div class="col-6" t-if="o.date">
 														<strong>Fecha de Pago: </strong> <span t-field="o.date"/>
@@ -196,10 +196,10 @@
 								<div t-if="is_cfdi_signed and o.company_id.vat != o.l10n_mx_edi_cfdi_supplier_rfc" class="col-6">
 										<span>XML VAT: </span><span t-esc="o.l10n_mx_edi_cfdi_supplier_rfc"/>
 								</div>
-								<div t-if="is_cfdi_signed and o.l10n_mx_edi_payment_method_id" class="col-6">
+								<!--<div t-if="is_cfdi_signed and o.l10n_mx_edi_payment_method_id" class="col-6">
 										<strong>Payment Way CFDI:</strong>
 										<span t-esc="'%s - %s' % (o.l10n_mx_edi_payment_method_id.code, o.l10n_mx_edi_payment_method_id.name)"/>
-								</div>
+								</div>-->
 						</t>
         </t>
     </t>
