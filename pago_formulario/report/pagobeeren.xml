@@ -22,56 +22,9 @@
                 <div class="page" style="max-width:100mm">
                   <div class="row texty-center">
                     <div class="col-12"><h3><br/>Pago <span t-field="o.name"/></h3></div>
-                    <t t-set="cfdi_vals" t-value="o._l10n_mx_edi_decode_cfdi()"/>
-                    <t t-set="is_cfdi_signed" t-value="bool(o._get_l10n_mx_edi_signed_edi_document())"/>
                   </div>
                 </div>
 
-                
-
-
-                <div class="container-fluid">
-                  <div class="row" id="complement">
-                    <div t-if="cfdi_vals.get('sello')" class="barcode col-2">
-                        <img alt="Barcode" t-att-src="'/report/barcode/?type=QR&amp;value=%s&amp;width=130&amp;height=130' % quote_plus(                             'https://verificacfdi.facturaelectronica.sat.gob.mx/default.aspx?' + keep_query(                                 re=o.l10n_mx_edi_cfdi_supplier_rfc, rr=o.l10n_mx_edi_cfdi_customer_rfc,                                 tt='%.*f' % (o.currency_id.decimal_places, o.l10n_mx_edi_cfdi_amount), id=o.l10n_mx_edi_cfdi_uuid)                                 + '&amp;fe=%s' % quote_plus(                                     cfdi_vals['sello'][-8:], 'utf-8', 'strict', '=/').replace('%2B', '+'))"/>
-                    </div>
-                    <div class="complement-details col-10">
-                        <div class="digital-stamp">
-                            <span>Digital stamp of the emitter</span>
-                        </div>
-                        <div class="digital-stamp-content">
-                            <span t-esc="cfdi_vals.get('sello')"/>
-                        </div>
-                        <div class="digital-stamp">
-                            <span>Digital stamp SAT</span>
-                        </div>
-                        <div class="digital-stamp-content">
-                            <span t-esc="cfdi_vals.get('sello_sat')"/>
-                        </div>
-                        <div class="digital-stamp">
-                            <span>Original chain complement of digital certification SAT</span>
-                        </div>
-                        <div class="digital-stamp-content">
-                            <span class="nowrap" t-esc="cfdi_vals.get('cadena')"/>
-                        </div>
-                        <div class="digital-stamp">
-                            <span>Extra Info</span>
-                        </div>
-                        <div class="digital-stamp-content">
-                            <span>Emitter certificate:</span> <span t-esc="cfdi_vals.get('certificate_number')"/>
-                            <span> | SAT Certificate:</span> <span t-esc="cfdi_vals.get('certificate_sat_number')"/>
-                            <span> | Expedition place:</span> <span t-esc="cfdi_vals.get('expedition')"/>
-                            <span> | Fiscal Regime:</span><span t-esc="cfdi_vals.get('fiscal_regime')"/>
-                            <span> | Emission Date:</span> <span t-esc="cfdi_vals.get('emission_date_str')"/>
-                            <span> | Certification Date:</span> <span t-esc="cfdi_vals.get('stamp_date')"/>
-                            <span> | Fiscal Folio:</span> <span t-esc="cfdi_vals.get('uuid')"/>
-                        </div>
-                        <div class="digital-stamp-content text-center">
-                            <strong>This document is a printed representation of a CFDI</strong>
-                        </div>
-                    </div>
-                  </div>
-                </div>
             </t>
         </t>
     </t>
