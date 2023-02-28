@@ -153,7 +153,9 @@
 										<t t-if="is_cfdi_signed">
 												<div class="row" id="complement">
 														<div t-if="cfdi_vals.get('sello')" class="barcode col-2">
-																<img alt="Barcode" t-att-src="'/report/barcode/?type=QR&amp;value=%s&amp;width=140&amp;height=140' % quote_plus(                             'https://verificacfdi.facturaelectronica.sat.gob.mx/default.aspx?' + keep_query(                                 re=o.l10n_mx_edi_cfdi_supplier_rfc, rr=o.l10n_mx_edi_cfdi_customer_rfc,                                 tt=0, id=o.l10n_mx_edi_cfdi_uuid)                                 + '&amp;fe=%s' % quote_plus(cfdi_vals['sello'], 'utf-8', 'strict', '=/').replace('%2B', '+'))"/>
+																<!--<img alt="Barcode" t-att-src="'/report/barcode/?type=QR&amp;value=%s&amp;width=140&amp;height=140' % quote_plus(                             'https://verificacfdi.facturaelectronica.sat.gob.mx/default.aspx?' + keep_query(                                 re=o.l10n_mx_edi_cfdi_supplier_rfc, rr=o.l10n_mx_edi_cfdi_customer_rfc,                                 tt=0, id=o.l10n_mx_edi_cfdi_uuid)                                 + '&amp;fe=%s' % quote_plus(cfdi_vals['sello'], 'utf-8', 'strict', '=/').replace('%2B', '+'))"/>-->
+																<img alt="Barcode" t-att-src="'/report/barcode/?type=QR&amp;value=%s&amp;width=130&amp;height=130' % quote_plus(                             'https://verificacfdi.facturaelectronica.sat.gob.mx/default.aspx?' + keep_query(                                 re=o.l10n_mx_edi_cfdi_supplier_rfc, rr=o.l10n_mx_edi_cfdi_customer_rfc,                                 tt='%.*f' % (o.currency_id.decimal_places, o.l10n_mx_edi_cfdi_amount), id=o.l10n_mx_edi_cfdi_uuid)                                 + '&amp;fe=%s' % quote_plus(                                     cfdi_vals['sello'][-8:], 'utf-8', 'strict', '=/').replace('%2B', '+'))"/>
+
 														</div>
 														<div class="complement-details col-10">
 																<div class="digital-stamp">
