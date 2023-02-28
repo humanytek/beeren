@@ -128,7 +128,7 @@
 														</tbody>
 												</table>
 										</t>
-										<t t-if="o.move_id.l10n_mx_edi_cfdi_uuid">
+										<!--<t t-if="o.move_id.l10n_mx_edi_cfdi_uuid">
 												<table class="table table-sm">
 														<thead>
 																<tr>
@@ -149,7 +149,7 @@
 																</tr>
 														</tbody>
 												</table>
-										</t>
+										</t>-->
 										<t t-if="is_cfdi_signed">
 												<div class="row" id="complement">
 														<div t-if="cfdi_vals.get('sello')" class="barcode col-2">
