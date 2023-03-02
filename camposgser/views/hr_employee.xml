@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<xpath expr="//field[@name='work_phone']" position="attributes">
+    <attribute name="placeholder">Télefono de trabajoo</attribute>
+</xpath>
+
+
