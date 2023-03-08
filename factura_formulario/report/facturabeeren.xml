@@ -204,7 +204,11 @@
                       <br/>
                       Por favor utilice la siguiente referencia al realizar su pago: <span t-field="o.name"/>  
                       <br/>
-                      Plazo de pago: <span t-field="o.invoice_payment_term_id"/>
+                      <t t-if="doc.l10n_mx_edi_cfdi_usage=='P01'">
+                        <!--No se imprime nada-->
+                      <t t-else="">
+                        Plazo de pago: <span t-field="o.invoice_payment_term_id"/>
+                      </t>
                       <br/>
                       <t t-set="cfdi_vals" t-value="o._l10n_mx_edi_decode_cfdi()"/>
                       <t t-set="is_cfdi_signed" t-value="bool(o._get_l10n_mx_edi_signed_edi_document())"/>
@@ -226,7 +230,7 @@
                         <img alt="Barcode" t-att-src="'/report/barcode/?type=QR&amp;value=%s&amp;width=100&amp;height=100' % quote_plus(                             'https://verificacfdi.facturaelectronica.sat.gob.mx/default.aspx?' + keep_query(                                 re=o.l10n_mx_edi_cfdi_supplier_rfc, rr=o.l10n_mx_edi_cfdi_customer_rfc,                                 tt='%.*f' % (o.currency_id.decimal_places, o.l10n_mx_edi_cfdi_amount), id=o.l10n_mx_edi_cfdi_uuid)                                 + '&amp;fe=%s' % quote_plus(                                     cfdi_vals['sello'][-8:], 'utf-8', 'strict', '=/').replace('%2B', '+'))"/>
                     </div>
                     <div class="complement-details col-10" style="font-size: 5px; color: BLACK;">
-                        <div class="digital-stamp" style="font-size: 5px; color: BLACK;">
+                        <div class="digital-stamp">
                             <span>Digital stamp of the emitter</span>
                         </div>
                         <div class="digital-stamp-content">
