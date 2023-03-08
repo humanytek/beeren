@@ -61,22 +61,18 @@
                       <h6>CLIENTE:</h6>
                       <span t-field="o.partner_id"/><br/>
                       <span t-field="o.partner_id.street_name"/><br/>
-                      No.
-                      <span t-field="o.partner_id.street_number"/>
-                      Int.
-                      <span t-field="o.partner_id.street_number2"/><br/>
-                      Colonia:
-                      <span t-field="o.partner_id.l10n_mx_edi_colony"/><br/>
-                      <span t-field="o.partner_id.l10n_mx_edi_locality_id"/>,
+                      No.<span t-field="o.partner_id.street_number"/>
+                      Int.<span t-field="o.partner_id.street_number2"/><br/>
+                      Colonia:<span t-field="o.partner_id.l10n_mx_edi_colony"/><br/>
+                      <span t-field="o.partner_id.l10n_mx_edi_locality_id"/>
+                    </div>
+                    <div class="col-6 text-left p-3" style="font-size: 10px; color: BLACK; border: 0px solid #000;">
                       <span t-field="o.partner_id.city"/>,
                       <span t-field="o.partner_id.city_id"/>,
                       <span t-field="o.partner_id.state_id"/>,<br/>
                       <span t-field="o.partner_id.country_id"/>.<br/>
-                      CP:
-                      <span t-field="o.partner_id.zip"/><br/>
-                      RFC:
-                      <span t-field="o.partner_id.vat"/><br/>
-                      
+                      CP:<span t-field="o.partner_id.zip"/><br/>
+                      RFC:<span t-field="o.partner_id.vat"/><br/>
                     </div>
                   </div>
                 </div>
