@@ -43,6 +43,11 @@
 
                 <div class="container-fluid">
                   <div class="row">
+                    <div class="col-12 text-left p-3" style="font-size: 10px; color: BLACK; border: 0px solid #000;">
+                      <h6>CLIENTE:</h6>
+                    </div>
+                  </div>
+                  <div class="row">
                     <!--<div class="col-6 text-left p-3" style="font-size: 10px; color: BLACK; border: 0px solid #000;">
                       <h6>EMPRESA:</h6>
                       <span t-field="o.company_id.name"/><br/>
@@ -57,9 +62,6 @@
                       Regimen Fiscal: Coordinados<br/>
                       Expedido en: LAGOS DE MORENO, Jalisco, C.P.47400
                     </div>-->
-                    <div class="col-12 text-left p-3" style="font-size: 10px; color: BLACK; border: 0px solid #000;">
-                      <h6>CLIENTE:</h6>
-                    </div>
                     <div class="col-6 text-left p-3" style="font-size: 10px; color: BLACK; border: 0px solid #000;">
                       <span t-field="o.partner_id"/><br/>
                       <span t-field="o.partner_id.street_name"/><br/>
