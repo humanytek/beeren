@@ -205,7 +205,7 @@
                       Por favor utilice la siguiente referencia al realizar su pago: <span t-field="o.name"/>  
                       <br/>
                               
-                      <t t-if="o.l10n_mx_edi_payment_policy=='PPD'">
+                      <t t-if="o.l10n_mx_edi_payment_policy=='PUE'">
                         <!-- o.l10n_mx_edi_payment_policy No se imprime nada-->
                       </t>  
                       <t t-else="">
