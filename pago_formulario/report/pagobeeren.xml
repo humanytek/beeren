@@ -13,18 +13,18 @@
 
                 <div class="container-fluid">
                   <div class="row" style="font-size: 12px;">
-                    <div class="col-4 text-left" style="font-size: 12px; color: BLACK; border: 0px solid #000;">
+                    <div class="col-4 text-left" style="font-size: 14px; color: BLACK; border: 0px solid #000;">
                       <img t-att-src="image_data_uri(o.company_id.logo)" width="240px" height="120px"/> 
                     </div>
-                    <div class="col-4 text-left" style="font-size: 12px; color: BLACK; border: 0px solid #000;">
+                    <div class="col-4 text-left" style="font-size: 14px; color: BLACK; border: 0px solid #000;">
                      <br/><span t-field="o.company_id.name"/><br/>
                       <span t-field="o.company_id.street"/><br/>
                       <span t-field="o.company_id.city"/>
                       <span t-field="o.company_id.state_id"/><br/>
                       <span t-field="o.company_id.country_id"/><br/>
                     </div>
-                    <div class="col-4 text-left" style="font-size: 12px; color: BLACK; border: 0px solid #000;">
-                      CP:<span t-field="o.company_id.zip"/><br/>
+                    <div class="col-4 text-left" style="font-size: 14px; color: BLACK; border: 0px solid #000;">
+                     <br/>CP:<span t-field="o.company_id.zip"/><br/>
                       RFC:<span t-field="o.company_id.vat"/><br/>
                       Regimen Fiscal: General de Ley Personas Morales<br/>
                     </div>
@@ -168,8 +168,8 @@
 																<!--<img alt="Barcode" t-att-src="'/report/barcode/?type=QR&amp;value=%s&amp;width=140&amp;height=140' % quote_plus(                             'https://verificacfdi.facturaelectronica.sat.gob.mx/default.aspx?' + keep_query(                                 re=o.l10n_mx_edi_cfdi_supplier_rfc, rr=o.l10n_mx_edi_cfdi_customer_rfc,                                 tt=0, id=o.l10n_mx_edi_cfdi_uuid)                                 + '&amp;fe=%s' % quote_plus(cfdi_vals['sello'], 'utf-8', 'strict', '=/').replace('%2B', '+'))"/>-->
 																<img alt="Barcode" t-att-src="'/report/barcode/?type=QR&amp;value=%s&amp;width=100&amp;height=100' % quote_plus(                             'https://verificacfdi.facturaelectronica.sat.gob.mx/default.aspx?' + keep_query(                                 re=o.l10n_mx_edi_cfdi_supplier_rfc, rr=o.l10n_mx_edi_cfdi_customer_rfc,                                 tt='%.*f' % (o.currency_id.decimal_places, o.l10n_mx_edi_cfdi_amount), id=o.l10n_mx_edi_cfdi_uuid)                                 + '&amp;fe=%s' % quote_plus(                                     cfdi_vals['sello'][-8:], 'utf-8', 'strict', '=/').replace('%2B', '+'))"/>
 														</div>
-														<div class="complement-details col-10" style="font-size: 8px; color: BLACK; border: 0px solid #000;">
-																<div class="digital-stamp">
+														<div class="complement-details col-10" style="font-size: 5px; color: BLACK;">
+																<div class="digital-stamp" style="font-size: 5px; color: BLACK;">
 																		<span>Digital stamp of the emitter</span>
 																</div>
 																<div class="digital-stamp-content">
