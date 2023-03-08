@@ -13,21 +13,20 @@
 
                 <div class="container-fluid">
                   <div class="row" style="font-size: 12px;">
-                    <div class="col-4 text-left" style="font-size: 10px; color: BLACK; border: 0px solid #000;">
+                    <div class="col-4 text-left" style="font-size: 12px; color: BLACK; border: 0px solid #000;">
                       <img t-att-src="image_data_uri(o.company_id.logo)" width="118px" height="60px"/>
                     </div>
-                    <div class="col-4 text-left" style="font-size: 10px; color: BLACK; border: 0px solid #000;">
+                    <div class="col-4 text-left" style="font-size: 12px; color: BLACK; border: 0px solid #000;">
                       <span t-field="o.company_id.name"/><br/>
                       <span t-field="o.company_id.street"/><br/>
                       <span t-field="o.company_id.city"/>
                       <span t-field="o.company_id.state_id"/><br/>
                       <span t-field="o.company_id.country_id"/><br/>
                     </div>
-                    <div class="col-4 text-left" style="font-size: 10px; color: BLACK; border: 0px solid #000;">
+                    <div class="col-4 text-left" style="font-size: 12px; color: BLACK; border: 0px solid #000;">
                       CP:<span t-field="o.company_id.zip"/><br/>
                       RFC:<span t-field="o.company_id.vat"/><br/>
                       Regimen Fiscal: General de Ley Personas Morales<br/>
-                      Expedido en: LAGOS DE MORENO, Jalisco, C.P.47400
                     </div>
                   </div>
                 </div>
@@ -43,7 +42,7 @@
 												<h1>A signature of this payment is required, but it is not signed.</h1>
 										</button>
 								</t>
-								<div class="page">
+								<div class="page" style="font-size: 12px; color: BLACK; border: 0px solid #000;">
 										<h3><strong><br/><br/>Recibo de Pago: <span t-field="o.name"/></strong></h3>
 										<div class="row mt64">
 												<div class="col-6" t-if="o.date">
