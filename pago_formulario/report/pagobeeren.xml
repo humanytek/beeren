@@ -44,7 +44,7 @@
 										</button>
 								</t>
 								<div class="page">
-										<h3><strong>Recibo de Pago: <span t-field="o.name"/></strong></h3>
+										<h3><strong><br/><br/>Recibo de Pago: <span t-field="o.name"/></strong></h3>
 										<div class="row mt64">
 												<div class="col-6" t-if="o.date">
 														<strong>Fecha de Pago: </strong> <span t-field="o.date"/>
