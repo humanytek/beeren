@@ -14,7 +14,7 @@
                 <div class="container-fluid">
                   <div class="row" style="font-size: 12px;">
                     <div class="col-4 text-left" style="font-size: 12px; color: BLACK; border: 0px solid #000;">
-                      <img t-att-src="image_data_uri(o.company_id.logo)" width="118px" height="60px"/>
+                      <img t-att-src="image_data_uri(o.company_id.logo)" width="240px" height="120px"/>
                     </div>
                     <div class="col-4 text-left" style="font-size: 12px; color: BLACK; border: 0px solid #000;">
                       <span t-field="o.company_id.name"/><br/>
