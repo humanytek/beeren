@@ -13,8 +13,20 @@
 
                 <div class="container-fluid">
                   <div class="row" style="font-size: 12px;">
-                    <div class="col-12 text-left">
-                      <img t-att-src="image_data_uri(o.company_id.logo)" width="118px" height="60px"/>
+                    <div class="col-4 text-left" style="font-size: 14px; color: BLACK; border: 0px solid #000;">
+                      <img t-att-src="image_data_uri(o.company_id.logo)" width="240px" height="120px"/> 
+                    </div>
+                    <div class="col-4 text-left" style="font-size: 14px; color: BLACK; border: 0px solid #000;">
+                     <br/><span t-field="o.company_id.name"/><br/>
+                      <span t-field="o.company_id.street"/><br/>
+                      <span t-field="o.company_id.city"/>
+                      <span t-field="o.company_id.state_id"/><br/>
+                      <span t-field="o.company_id.country_id"/><br/>
+                    </div>
+                    <div class="col-4 text-left" style="font-size: 14px; color: BLACK; border: 0px solid #000;">
+                     <br/>CP:<span t-field="o.company_id.zip"/><br/>
+                      RFC:<span t-field="o.company_id.vat"/><br/>
+                      Regimen Fiscal: General de Ley Personas Morales<br/>
                     </div>
                   </div>
                 </div>
@@ -22,15 +34,15 @@
                 <div class="page" style="max-width:100mm">
                   <div class="row texty-center">
                     <!--<img t-if="company.logo" t-att-src="image_data_uri(company.logo)" alt="Logo"/>-->
-                    <div class="col-12"><h3><br/>Factura <span t-field="o.name"/></h3></div>
+                    <div class="col-12"><h4><br/>Factura <span t-field="o.name"/></h4></div>
                     <t t-set="cfdi_vals" t-value="o._l10n_mx_edi_decode_cfdi()"/>
-                    <t t-set="is_cfdi_signed" t-value="bool(o._get_l10n_mx_edi_signed_edi_document())"/>
+                    <t t-set="is_cfdi_signed" t-value="bool(o._get_l10n_mx_edi_signed_edi_document())"/><br/><br/>
                   </div>
                 </div>
 
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-6 text-left p-3" style="font-size: 10px; color: BLACK; border: 0px solid #000;">
+                    <!--<div class="col-6 text-left p-3" style="font-size: 10px; color: BLACK; border: 0px solid #000;">
                       <h6>EMPRESA:</h6>
                       <span t-field="o.company_id.name"/><br/>
                       <span t-field="o.company_id.street"/><br/>
@@ -43,27 +55,25 @@
                       <span t-field="o.company_id.vat"/><br/>
                       Regimen Fiscal: Coordinados<br/>
                       Expedido en: LAGOS DE MORENO, Jalisco, C.P.47400
-                    </div>
-                    <div class="col-6 text-left p-3" style="font-size: 10px; color: BLACK; border: 0px solid #000;">
+                    </div>-->
+                    <div class="col-4 text-left p-3" style="font-size: 10px; color: BLACK; border: 0px solid #000;">
                       <h6>CLIENTE:</h6>
+                    </div>
+                    <div class="col-4 text-left p-3" style="font-size: 10px; color: BLACK; border: 0px solid #000;">
                       <span t-field="o.partner_id"/><br/>
                       <span t-field="o.partner_id.street_name"/><br/>
-                      No.
-                      <span t-field="o.partner_id.street_number"/>
-                      Int.
-                      <span t-field="o.partner_id.street_number2"/><br/>
-                      Colonia:
-                      <span t-field="o.partner_id.l10n_mx_edi_colony"/><br/>
-                      <span t-field="o.partner_id.l10n_mx_edi_locality_id"/>,
+                      No.<span t-field="o.partner_id.street_number"/>
+                      Int.<span t-field="o.partner_id.street_number2"/><br/>
+                      Colonia:<span t-field="o.partner_id.l10n_mx_edi_colony"/><br/>
+                      <span t-field="o.partner_id.l10n_mx_edi_locality_id"/>
+                    </div>
+                    <div class="col-4 text-left p-3" style="font-size: 10px; color: BLACK; border: 0px solid #000;">
                       <span t-field="o.partner_id.city"/>,
                       <span t-field="o.partner_id.city_id"/>,
                       <span t-field="o.partner_id.state_id"/>,<br/>
                       <span t-field="o.partner_id.country_id"/>.<br/>
-                      CP:
-                      <span t-field="o.partner_id.zip"/><br/>
-                      RFC:
-                      <span t-field="o.partner_id.vat"/><br/>
-                      
+                      CP:<span t-field="o.partner_id.zip"/><br/>
+                      RFC:<span t-field="o.partner_id.vat"/><br/>
                     </div>
                   </div>
                 </div>
@@ -194,7 +204,13 @@
                       <br/>
                       Por favor utilice la siguiente referencia al realizar su pago: <span t-field="o.name"/>  
                       <br/>
-                      Plazo de pago: <span t-field="o.invoice_payment_term_id"/>
+                              
+                      <t t-if="o.l10n_mx_edi_payment_policy=='PUE'">
+                        <!-- o.l10n_mx_edi_payment_policy No se imprime nada-->
+                      </t>  
+                      <t t-else="">
+                        Plazo de pago: <span t-field="o.invoice_payment_term_id"/>
+                      </t>
                       <br/>
                       <t t-set="cfdi_vals" t-value="o._l10n_mx_edi_decode_cfdi()"/>
                       <t t-set="is_cfdi_signed" t-value="bool(o._get_l10n_mx_edi_signed_edi_document())"/>
@@ -211,11 +227,11 @@
 
 
                 <div class="container-fluid">
-                  <div class="row" id="complement">
+                  <div class="row" id="complement" style="font-size: 8px; color: BLACK; border: 0px solid #000;">
                     <div t-if="cfdi_vals.get('sello')" class="barcode col-2">
-                        <img alt="Barcode" t-att-src="'/report/barcode/?type=QR&amp;value=%s&amp;width=130&amp;height=130' % quote_plus(                             'https://verificacfdi.facturaelectronica.sat.gob.mx/default.aspx?' + keep_query(                                 re=o.l10n_mx_edi_cfdi_supplier_rfc, rr=o.l10n_mx_edi_cfdi_customer_rfc,                                 tt='%.*f' % (o.currency_id.decimal_places, o.l10n_mx_edi_cfdi_amount), id=o.l10n_mx_edi_cfdi_uuid)                                 + '&amp;fe=%s' % quote_plus(                                     cfdi_vals['sello'][-8:], 'utf-8', 'strict', '=/').replace('%2B', '+'))"/>
+                        <img alt="Barcode" t-att-src="'/report/barcode/?type=QR&amp;value=%s&amp;width=100&amp;height=100' % quote_plus(                             'https://verificacfdi.facturaelectronica.sat.gob.mx/default.aspx?' + keep_query(                                 re=o.l10n_mx_edi_cfdi_supplier_rfc, rr=o.l10n_mx_edi_cfdi_customer_rfc,                                 tt='%.*f' % (o.currency_id.decimal_places, o.l10n_mx_edi_cfdi_amount), id=o.l10n_mx_edi_cfdi_uuid)                                 + '&amp;fe=%s' % quote_plus(                                     cfdi_vals['sello'][-8:], 'utf-8', 'strict', '=/').replace('%2B', '+'))"/>
                     </div>
-                    <div class="complement-details col-10">
+                    <div class="complement-details col-10" style="font-size: 5px; color: BLACK;">
                         <div class="digital-stamp">
                             <span>Digital stamp of the emitter</span>
                         </div>
