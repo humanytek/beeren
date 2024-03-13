@@ -2,7 +2,7 @@ from odoo import fields, models
 
 
 class inventario_gser_2 (models.Model):
-    _inherit = "stock.picking"
+    _inherit = "stock.move.line"
 
     x_studio_folio_opd = fields.Char(
         string= 'Folio OPD',
