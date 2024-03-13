@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="add_line_folio_stock_lines" model="ir.ui.view">
+        <field name="name">Add Line Folio Stock Lines</field>
+        <field name="model">stock.move</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+<!--        <field name="product_id" position="after">
+            <field name="folio"/>-->
+            <xpath expr="//page[@name='detailed_operations']" position="inside">
+                <field name="folio_1"/>
+            </xpath>
+        </field>
+    </record>
+<!--
+    <record id="add_line_folio_stock_lines" model="ir.ui.view">
+        <field name="name">Add Line Folio Stock Lines</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <page>
+                <field name="product_id" position="after">
+                <field optional="show" name="folio_1" string="Folio"/>
+                </field>
+        </field>         
+    </record>
+-->
+</odoo>
